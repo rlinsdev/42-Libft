@@ -6,7 +6,7 @@
 /*   By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/02 18:30:32 by rlins             #+#    #+#             */
-/*   Updated: 2022/12/16 08:05:51 by rlins            ###   ########.fr       */
+/*   Updated: 2022/12/16 08:08:44 by rlins            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -382,5 +382,11 @@ int	ft_strcmp(const char *s1, const char *s2);
  * @param ptr Pointer by ref
  */
 void	free_ptr(void *ptr);
+
+/**
+ * @brief Free a array of string (pointer to pointer)
+ * @param arr_str 2 dimensional array to be free
+ */
+void	free_array_str(char **arr_str);
 
 #endif
