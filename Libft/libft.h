@@ -6,7 +6,7 @@
 /*   By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/02 18:30:32 by rlins             #+#    #+#             */
-/*   Updated: 2022/12/16 08:01:20 by rlins            ###   ########.fr       */
+/*   Updated: 2022/12/16 08:05:51 by rlins            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -376,5 +376,11 @@ int	ft_ato_long(const char *str, bool *error);
  * @return int. 0 if equal
  */
 int	ft_strcmp(const char *s1, const char *s2);
+
+/**
+ * @brief Free a pointer
+ * @param ptr Pointer by ref
+ */
+void	free_ptr(void *ptr);
 
 #endif
