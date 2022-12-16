@@ -6,7 +6,7 @@
 /*   By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/02 18:30:32 by rlins             #+#    #+#             */
-/*   Updated: 2022/12/16 07:51:14 by rlins            ###   ########.fr       */
+/*   Updated: 2022/12/16 08:01:20 by rlins            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -368,5 +368,13 @@ int	ft_isspace(int c);
  * @return int - The value parsed
  */
 int	ft_ato_long(const char *str, bool *error);
+
+/**
+ * @brief Compare 2 strings. Not necessary passing the size to compare
+ * @param s1 String 1
+ * @param s2 String 2
+ * @return int. 0 if equal
+ */
+int	ft_strcmp(const char *s1, const char *s2);
 
 #endif
