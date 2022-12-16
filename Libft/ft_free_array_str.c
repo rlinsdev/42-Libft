@@ -6,11 +6,11 @@
 /*   By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/16 08:07:38 by rlins             #+#    #+#             */
-/*   Updated: 2022/12/16 08:07:57 by rlins            ###   ########.fr       */
+/*   Updated: 2022/12/16 08:11:27 by rlins            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "libft.h"
+#include "libft.h"
 
 void	free_array_str(char **arr_str)
 {

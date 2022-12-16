@@ -6,7 +6,7 @@
 /*   By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/02 18:30:32 by rlins             #+#    #+#             */
-/*   Updated: 2022/12/16 08:08:44 by rlins            ###   ########.fr       */
+/*   Updated: 2022/12/16 08:10:57 by rlins            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -359,7 +359,7 @@ void	ft_putnbr_fd(int n, int fd);
  * @param c
  * @return int. (0) if not space
  */
-int	ft_isspace(int c);
+int		ft_isspace(int c);
 
 /**
  * @brief Similar to Asc To Int method. But will parse to Long, not int
@@ -367,7 +367,7 @@ int	ft_isspace(int c);
  * @param error Boolean passed by ref. Will indicate error
  * @return int - The value parsed
  */
-int	ft_ato_long(const char *str, bool *error);
+int		ft_ato_long(const char *str, bool *error);
 
 /**
  * @brief Compare 2 strings. Not necessary passing the size to compare
@@ -375,7 +375,7 @@ int	ft_ato_long(const char *str, bool *error);
  * @param s2 String 2
  * @return int. 0 if equal
  */
-int	ft_strcmp(const char *s1, const char *s2);
+int		ft_strcmp(const char *s1, const char *s2);
 
 /**
  * @brief Free a pointer

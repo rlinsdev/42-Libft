@@ -6,7 +6,7 @@
 /*   By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/06 21:56:09 by rlins             #+#    #+#             */
-/*   Updated: 2022/04/07 01:49:06 by rlins            ###   ########.fr       */
+/*   Updated: 2022/12/16 08:11:10 by rlins            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	s_size;
-	char		*result;
+	char	*result;
 
 	s_size = ft_strlen(s);
 	if (start > s_size)
