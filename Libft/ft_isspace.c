@@ -1,23 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   mft_str_count_word.c                               :+:      :+:    :+:   */
+/*   ft_isspace.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/12 15:02:09 by rlins             #+#    #+#             */
-/*   Updated: 2022/04/12 15:06:04 by rlins            ###   ########.fr       */
+/*   Created: 2022/11/22 13:35:38 by rlins             #+#    #+#             */
+/*   Updated: 2022/11/22 13:36:37 by rlins            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../Libft/libft.h"
-#include <stdio.h>
+#include "libft.h"
 
-int	main(void)
+int	ft_isspace(int c)
 {
-	char	str[80] = "Sentença com alguns espaços (4)";
-
-	printf("Palavras (Separador espaço): %ld\n",ft_str_count_word(str, ' '));
-
+	if (c == ' ' || c == '\t' || c == '\n' || c == '\r'
+		|| c == '\v' || c == '\f')
+		return (c);
 	return (0);
 }

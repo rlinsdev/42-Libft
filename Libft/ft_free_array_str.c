@@ -1,33 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   mft_itoa.c                                         :+:      :+:    :+:   */
+/*   ft_free_array_str.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/06 16:29:27 by rlins             #+#    #+#             */
-/*   Updated: 2022/04/06 18:38:53 by rlins            ###   ########.fr       */
+/*   Created: 2022/12/16 08:07:38 by rlins             #+#    #+#             */
+/*   Updated: 2022/12/16 08:11:27 by rlins            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../Libft/libft.h"
-//#include <stdlib.h>
-#include <stdio.h>
-//#include <string.h>
+#include "libft.h"
 
-int	main(void)
+void	free_array_str(char **arr_str)
 {
-	// int a = 54325;
-	// char buffer[20];
-	// itoa(a,buffer,10);   // here 10 means decimal
-	// printf("Decimal value = %s\n", buffer);
-	
-	//int nb = 21;
-	// int nb = 54325;
-	// int nb = -54325;
-	int nb = -2147483648; //KO
-	
-	printf("Valor em char: %s\n", ft_itoa(nb));
+	int	i;
 
-	return (0);
+	i = 0;
+	if (arr_str)
+	{
+		while (arr_str[i])
+		{
+			if (arr_str[i])
+			{
+				free_ptr(arr_str[i]);
+				arr_str[i] = NULL;
+			}
+			i++;
+		}
+		free(arr_str);
+		arr_str = NULL;
+	}
 }

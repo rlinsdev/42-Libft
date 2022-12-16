@@ -1,28 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   mft_strnstr.c                                      :+:      :+:    :+:   */
+/*   ft_free_ptr.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/05 15:42:52 by rlins             #+#    #+#             */
-/*   Updated: 2022/04/11 00:10:15 by rlins            ###   ########.fr       */
+/*   Created: 2022/12/16 08:05:05 by rlins             #+#    #+#             */
+/*   Updated: 2022/12/16 08:05:25 by rlins            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
-#include "../Libft/libft.h"
+#include "libft.h"
 
-int	main(void)
+void	free_ptr(void *ptr)
 {
-	const char *largestring = "Foo Bar Baz";
-	char *smallstring = "Bar";
-	char	*ptr;
-	ptr = ft_strnstr(largestring, smallstring, 11);
-	//ptr = ft_strnstr(largestring, smallstring, 4);
-
-	printf("Result: %s\n", ptr);
-
-	return(0);
+	if (ptr)
+	{
+		free(ptr);
+		ptr = NULL;
+	}
 }

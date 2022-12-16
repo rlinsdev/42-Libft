@@ -1,27 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   mft_strdup.c                                       :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/06 20:40:26 by rlins             #+#    #+#             */
-/*   Updated: 2022/04/06 20:53:31 by rlins            ###   ########.fr       */
+/*   Created: 2022/12/16 07:59:43 by rlins             #+#    #+#             */
+/*   Updated: 2022/12/16 08:00:10 by rlins            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-#include "../Libft/libft.h"
+#include "libft.h"
 
-int	main(void)
+int	ft_strcmp(const char *s1, const char *s2)
 {
-	char source[] = "GeeksForGeeks";
-	char* target = strdup(source);
-	printf("Origin: %s\nCopied: %s\n", source, target);
+	size_t	i;
 
-	char* target2 = ft_strdup(source);
-	printf("Implem: %s\nCopied: %s\n", source, target2);
-
-	return (0);
+	i = 0;
+	if (!s1 || !s2)
+		return (1);
+	while (s1[i] && s2[i] && (s1[i] == s2[i]))
+		i++;
+	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
