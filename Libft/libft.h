@@ -6,7 +6,7 @@
 /*   By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/02 18:30:32 by rlins             #+#    #+#             */
-/*   Updated: 2022/12/16 08:10:57 by rlins            ###   ########.fr       */
+/*   Updated: 2022/12/18 16:56:18 by rlins            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,11 @@
 # include <unistd.h>
 # include <limits.h>
 # include <stdbool.h>
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif
+
 
 /**
 * @brief The isalpha() function checks whether a character is an alphabet or not.
@@ -388,5 +393,8 @@ void	free_ptr(void *ptr);
  * @param arr_str 2 dimensional array to be free
  */
 void	free_array_str(char **arr_str);
+
+char	*get_next_line(int fd);
+char	*ft_realloc(char *str, size_t size);
 
 #endif
