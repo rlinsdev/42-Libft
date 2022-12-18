@@ -6,7 +6,7 @@
 /*   By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/18 16:54:17 by rlins             #+#    #+#             */
-/*   Updated: 2022/12/18 16:54:41 by rlins            ###   ########.fr       */
+/*   Updated: 2022/12/18 16:59:54 by rlins            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -127,4 +127,3 @@ char	*get_next_line(int fd)
 		return (read_file(buffer, line, fd));
 	return (NULL);
 }
-
