@@ -6,7 +6,7 @@
 #    By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/10 16:09:27 by rlins             #+#    #+#              #
-#    Updated: 2022/12/18 16:46:13 by rlins            ###   ########.fr        #
+#    Updated: 2022/12/18 16:53:30 by rlins            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -63,7 +63,8 @@ SRCS = ft_atoi.c \
 		ft_tolower.c \
 		ft_toupper.c \
 
-OBJ = $(patsubst %.c, %.o, $(SRC_FILES))
+OBJ_FILES = $(patsubst %.c, %.o, $(SRCS))
+OBJ = $(addprefix ./, $(OBJ_FILES))
 
 all: $(NAME)
 
